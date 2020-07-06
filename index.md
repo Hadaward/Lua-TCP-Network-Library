@@ -7,7 +7,8 @@ A simple network library that makes it easy to create tcp sockets, allows you to
 - Minor code changes.
 
 ### v1.1
-- Library made and shared.
+- The main functions were created.
+- The library has been published.
 
 ### Coming soon:
 - :setsockopt
@@ -30,8 +31,8 @@ while(true)do
 	if(newclient)then
 		-- Say in console: "new connection:	ip address"
 		print("new connection:", newclient.ipAddress)
-		-- Set timeout to 0 milliseconds
-		newclient:settimeout(0)
+		-- Set timeout to 1 milliseconds [works better then 0]
+		newclient:settimeout(1)
 		-- Insert in clients table
 		clients[#clients+1] = newclient
 	end
@@ -65,8 +66,8 @@ local net = require"ltnet";
 local client = net.client();
 -- Try to connect to the host
 local connected = client:connect("127.0.0.1", 6112) --[boolean]
--- Set timeout to 0 milliseconds
-client:settimeout(0)
+-- Set timeout to 1 milliseconds [works better then 0]
+client:settimeout(1)
 
 if (connected) then
 	-- send "ping" to the server
