@@ -1,5 +1,5 @@
-### Lua TCP Network Library v1.2 *Only for windows
-A simple network library that makes it easy to create tcp sockets, allows you to create both client and server.
+### Lua TCP Network Library v1.2
+This is a TCP network library developed for the easy creation of Lua servers and clients, you need basic knowledge in C to be able to build it on your system. It is recommended to use gcc or cl (Microsoft Visual Studio) to build the project. It is worth mentioning that the project is only compatible with windows computers and the Lua library inserted in the github (lua51.lib) is x64 and not x32, compile your own version of lua to change this. It is compatible with Lua versions 5.1 to 5.3.
 
 **Changelog:**
 - Added :settimeout(time in milliseconds) [< 0 = disable, >= 0 = enable]
