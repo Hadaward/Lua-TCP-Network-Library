@@ -17,7 +17,7 @@ A simple network library that makes it easy to create tcp sockets, allows you to
 - Errors using the syntax: "error id: message" [string]
 
 ### Server Sample
-```Lua
+```lua
 local net = require"ltnet";
 -- Create server socket
 local server = net.server(); -- optional: net.server(0); to disable non-blocking, default: 1
@@ -62,7 +62,7 @@ end
 ```
 
 ### Client Sample
-```Lua
+```lua
 local net = require"ltnet";
 -- Create client instance
 local client = net.client();
