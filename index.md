@@ -15,6 +15,20 @@ It is worth mentioning that the project is only compatible with windows computer
 - :setsockopt
 - Errors using the syntax: "error id: message" [string]
 
+### LTN Tree
+- ltnet.server(optional mode[number, by default: 1]) [**Server**]
+  - :bind(port[number])
+  - :close()
+  - :accept()
+    - **Client** or Nil
+
+- ltnet.client() [**Client**]
+    - :connect(host[string], port[number])
+    - :settimeout(time milis[number])
+    - :write(data[string])
+    - :recv(buffer length[number, max: 2048])
+    - :close()
+
 ### Server Sample
 ```lua
 local net = require"ltnet";
