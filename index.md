@@ -3,7 +3,7 @@ A simple network library that makes it easy to create tcp sockets, allows you to
 ## Changelog:
 ### v1.2 
 - Added :settimeout(time in milliseconds) [< 0 = disable, >= 0 = enable]
-- The ltnet.server function now has an optional numeric argument "mode" that defines the socket mode for non-blocking or blocking, with 0 for blocking and 1 for non-blocking, default: 1.
+- The ltnet.server function now has an optional numeric argument "mode" that defines the socket mode for non-blocking or blocking, with 0 for blocking and 1 for non-blocking. (by default mode is non-blocking)
 - Minor code changes.
 ### v1.1
 - Library made and shared.
