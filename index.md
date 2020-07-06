@@ -1,5 +1,3 @@
-[View project on GitHub](https://github.com/Hadaward/Lua-TCP-Network-Library)
-
 A simple network library that makes it easy to create tcp sockets, allows you to create both client and server.
 
 ## Changelog:
